@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterEventPage">
+
+
+    <Button
+        android:id="@+id/finishRegEventButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#84E293"
+        android:text="@string/registerButton"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventNoOfPlacesET" />
+
+    <TextView
+        android:id="@+id/eventNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/eventNameLabel"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/eventStartDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/eventStartDateLabel"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/eventDescriptionET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventDescriptionET"
+        app:layout_constraintTop_toBottomOf="@+id/eventDescriptionET" />
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="eg: ATI"
+        app:layout_constraintEnd_toEndOf="@+id/eventNameTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventNameTV"
+        app:layout_constraintTop_toBottomOf="@+id/eventNameTV" />
+
+    <EditText
+        android:id="@+id/eventDescriptionET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="eg: Some event"
+        app:layout_constraintEnd_toEndOf="@+id/eventDescriptionTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventDescriptionTV"
+        app:layout_constraintTop_toBottomOf="@+id/eventDescriptionTV" />
+
+    <TextView
+        android:id="@+id/eventDescriptionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/eventDescriptionLabel"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/eventNameET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventNameET"
+        app:layout_constraintTop_toBottomOf="@+id/eventNameET" />
+
+    <TextView
+        android:id="@+id/eventEndDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/eventEndDateLabel"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/eventStartDateET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventStartDateET"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartDateET" />
+
+    <EditText
+        android:id="@+id/eventEndDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/eventEndDateTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventEndDateTV"
+        app:layout_constraintTop_toBottomOf="@+id/eventEndDateTV" />
+
+
+
+    <EditText
+        android:id="@+id/eventStartDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/eventStartDateTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventStartDateTV"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartDateTV" />
+
+    <TextView
+        android:id="@+id/eventNoOfPlacesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/eventVacantPlaces"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="@+id/eventEndDateET"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventEndDateET"
+        app:layout_constraintTop_toBottomOf="@+id/eventEndDateET" />
+
+    <EditText
+        android:id="@+id/eventNoOfPlacesET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/eventNoOfPlacesTV"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/eventNoOfPlacesTV"
+        app:layout_constraintTop_toBottomOf="@+id/eventNoOfPlacesTV" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#84E293"
+        app:layout_constraintBottom_toBottomOf="@+id/eventStartDateET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventStartDateET"
+        app:layout_constraintTop_toTopOf="@+id/eventStartDateET"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#84E293"
+        app:layout_constraintBottom_toBottomOf="@+id/eventEndDateET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventEndDateET"
+        app:layout_constraintTop_toTopOf="@+id/eventEndDateET"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <TextView
+        android:id="@+id/eventErrorTV"
+        android:layout_width="211dp"
+        android:layout_height="15dp"
+        android:layout_marginBottom="28dp"
+        android:textColor="#ff1111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/finishRegEventButton"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/finishRegEventButton"
+        app:layout_constraintTop_toBottomOf="@+id/finishRegEventButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

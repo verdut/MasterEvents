@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SignApp</string>
+    <string name="emailLabel">Email:</string>
+    <string name="passwordLabel">Password:</string>
+    <string name="titleLabel">Master Events</string>
+    <string name="loginButton">Login</string>
+    <string name="registerButton">Register</string>
+    <string name="firstNameLabel">First Name:</string>
+    <string name="lastNameLabel">Last Name:</string>
+    <string name="regEmailLabel">Email address: </string>
+    <string name="regPassLabel">Password: </string>
+    <string name="regConfirmPassLabel">Confirm password: </string>
+    <string name="eventNameLabel">Event name: </string>
+    <string name="eventDescriptionLabel">Description: </string>
+    <string name="eventStartDateLabel">Start date: </string>
+    <string name="eventEndDateLabel">End date: </string>
+    <string name="eventVacantPlaces">No. of places: </string>
+
+
+</resources>
